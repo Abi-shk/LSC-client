@@ -11,7 +11,7 @@ import {
   TopBar,
 } from "../components";
 import { Link, useNavigate } from "react-router-dom";
-import { NoProfile } from "../assets/userprofile.png";
+import  NoProfile from "../assets/userprofile.png";
 import { BsFiletypeGif, BsFillPersonCheckFill, BsPersonFillAdd } from "react-icons/bs";
 import { BiImages, BiSolidVideo } from "react-icons/bi";
 import { useForm } from "react-hook-form";

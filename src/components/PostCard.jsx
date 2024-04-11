@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import moment from "moment";
-import { NoProfile } from "../assets/userprofile.png";
+import  NoProfile  from "../assets/userprofile.png";
 import { BiComment, BiLike, BiSolidLike } from "react-icons/bi";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { useForm } from "react-hook-form";
