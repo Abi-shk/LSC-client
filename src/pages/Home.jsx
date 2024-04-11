@@ -58,7 +58,7 @@ const Home = () => {
       const uri = file && (await handleFileUpload(file));
       const newData = uri ? { ...data, image: uri } : data;
       const res = await axios.post(
-        "http://localhost:5000/posts/create-post",
+        "https://lsc-server.onrender.com/posts/create-post",
         newData,
         {
           headers: {
@@ -120,7 +120,7 @@ const Home = () => {
   const fetchSuggestedFriends = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/suggested-friends",
+        "https://lsc-server.onrender.com/users/suggested-friends",
         {},
         {
           headers: {
@@ -130,7 +130,6 @@ const Home = () => {
         }
       );
 
-      console.log(res)
       setSuggestedFriends(res?.data.data);
       setUserData(res?.data.userData)
     } catch (error) {

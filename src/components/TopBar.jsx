@@ -7,12 +7,11 @@ import TextInput from "./TextInput";
 import CustomButton from "./CustomButton";
 import { useForm } from "react-hook-form";
 import { BsMoon, BsSunFill } from "react-icons/bs";
-import { IoMdClose, IoMdNotificationsOutline } from "react-icons/io";
+import { IoMdNotificationsOutline } from "react-icons/io";
 import { SetTheme } from "../redux/theme";
 import { Logout } from "../redux/userSlice";
 import { apiRequest, fetchPosts } from "../utils";
-import { NoProfile } from '../assets'
-import { BiCloset, BiUser } from "react-icons/bi";
+import {  BiUser } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import ProfileCard from "./ProfileCard";
 import { FaCode } from "react-icons/fa";

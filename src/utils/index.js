@@ -1,7 +1,7 @@
 import axios from "axios";
 import { SetPosts } from "../redux/postSlice";
 
-const API_URL = "http://localhost:5000/";
+const API_URL = "https://lsc-server.onrender.com/";
 
 export const API = axios.create({
     baseURL: API_URL,
@@ -18,8 +18,6 @@ export const apiRequest = async ({ url,token,data,method }) =>{
                 Authorization: token ? `Bearer ${token}` : "",
             }
         });
-    
-        console.log(url,result.data);
         return result.data;
     } catch (error) {
         const err = error.response.data;
@@ -94,9 +92,9 @@ export const deletePost = async ( id,token ) => {
 export const getUserInfo = async ( token,id ) => {
     let uri
     if(id){
-        uri="http://localhost:5000/users/get-user/"+id;
+        uri="https://lsc-server.onrender.com/users/get-user/"+id;
     }else{
-        uri="http://localhost:5000/users/get-user/";
+        uri="https://lsc-server.onrender.com/users/get-user/";
     }
 
     try{
