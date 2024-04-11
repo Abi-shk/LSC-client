@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { NoProfile } from "../assets";
+import { NoProfile } from "../assets/userprofile.png";
 
 const FriendsCard = ({ friends }) => {
   return (

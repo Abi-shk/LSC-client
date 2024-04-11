@@ -7,7 +7,7 @@ import { BsShare } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { CustomButton, Loading, TextInput } from "../components";
-import { BgImage } from "../assets";
+import { BgImage } from "../assets/img.jpeg";
 import { apiRequest } from "../utils";
 import { GoogleLogin } from '@react-oauth/google';
 import { UserLogin } from "../redux/userSlice";

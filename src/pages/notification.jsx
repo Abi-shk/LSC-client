@@ -1,5 +1,5 @@
 import React from 'react'
-import { NoProfile } from '../assets'
+import { NoProfile } from '../assets/userprofile.png'
 
 function Notification() {
     return (

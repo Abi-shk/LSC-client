@@ -13,7 +13,7 @@ import { CiLocationOn } from "react-icons/ci";
 import moment from "moment";
 import { apiRequest, getUserInfo } from "../utils";
 
-import { NoProfile } from "../assets";
+import { NoProfile } from "../assets/userprofile.png";
 import { Logout, UpdateProfile } from "../redux/userSlice";
 import axios from "axios";
 import { MdDangerous, MdDeleteForever } from "react-icons/md";
