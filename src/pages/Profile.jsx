@@ -8,7 +8,6 @@ import {
   ProfileCard,
   TopBar,
 } from "../components";
-import { posts } from "../assets/data";
 import { deletePost, fetchPosts, getUserInfo, likePost } from "../utils";
 
 const Profile = () => {

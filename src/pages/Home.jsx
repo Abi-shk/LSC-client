@@ -17,7 +17,6 @@ import { BiImages, BiSolidVideo } from "react-icons/bi";
 import { useForm } from "react-hook-form";
 import { apiRequest, deletePost, fetchPosts, getUserInfo, handleFileUpload, likePost, sendFriendRequest } from "../utils";
 import { UserLogin } from "../redux/userSlice";
-import { suggest } from "../assets/data";
 import axios from "axios";
 import { MdClose } from "react-icons/md";
 
@@ -25,7 +24,7 @@ const Home = () => {
   const { user, edit } = useSelector((state) => state.user);
   const { posts } = useSelector(state => state.posts);
   const [friendRequest, setFriendRequest] = useState([]);
-  const [suggestedFriends, setSuggestedFriends] = useState(suggest);
+  const [suggestedFriends, setSuggestedFriends] = useState([]);
   const [userData, setUserData] = useState(["sdsfsdfsdf", 'lksdflsjdf']);
   const [errMsg, setErrMsg] = useState("");
   const [file, setFile] = useState(null);
